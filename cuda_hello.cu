@@ -8,6 +8,7 @@ int main() {
 	int gridDim = 1;
 	int blockDim = 32;
 	cuda_hello<<<gridDim,blockDim>>>();
+        cudaDeviceSynchronize();
 	//FIXME:
 	return 0;
 }
