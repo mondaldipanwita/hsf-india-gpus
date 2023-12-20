@@ -5,7 +5,7 @@ __global__ void cuda_hello(){
 }
 
 int main() {
-	int gridDim = 1;
+	int gridDim = 10;
 	int blockDim = 32;
 	cuda_hello<<<gridDim,blockDim>>>();
 	//FIXME:
